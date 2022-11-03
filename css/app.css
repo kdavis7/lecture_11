@@ -1,0 +1,296 @@
+/* colors: keep with a coffee pallete color scheme */
+:root {
+    --primary: #b38c62;
+    --secondary: #442305;
+    --title: #774e28;
+  }
+  
+  /* layout styles */
+  nav {
+    background: var(--primary);
+    border-bottom: 10px solid var(--secondary);
+  }
+  nav a {
+    text-transform: uppercase;
+    color: var(--title);
+  }
+  nav a span {
+    font-weight: bold;
+  }
+  nav .sidenav-trigger {
+    margin: 0;
+  }
+  
+  /* form-styles */
+  .add-btn {
+    background: var(--title) !important;
+  }
+  input {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+  }
+  .side-form button {
+    background: var(--title);
+    box-shadow: 1px 1px 3px rgba(175, 116, 5, 0.2);
+  }
+  form .input-field {
+    margin-top: 30px;
+  }
+ #Offline {
+  font-size:20px;
+  margin-bottom: 25px;
+ }
+  #Off {
+    margin-bottom: 25px;
+  }
+/*RECIPE LAYOUT FOR EACH COFFEE RECIPE CARD PAGE*/
+  @import url('https://fonts.googleapis.com/css?family=PT Serif');
+
+body {
+  background: #f9f9f9;
+}
+
+#cd-container {
+  background: #ededed;
+  font-family: 'PT Serif', sans-serif;
+  width: 65%;
+  height: 385px;
+  margin: 5% auto;
+}
+
+#cd-title {
+  font-family: 'PT Serif', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  background: #442305;
+  padding: 15px 20px;
+  color: #fff;
+  border-radius: 2px 2px 0 0;
+}
+
+#details {
+  background: #fff;
+  border-left: solid 1px #ededed;
+  border-right: solid 1px #ededed;
+  font-size: 16px;
+  font-family: 'PT Serif', sans-serif;
+  padding: 15px 20px;
+}
+
+.detail-value {
+  color: #455560;
+}
+
+#cd-items {
+  background: #ededed;
+  font-family: 'PT Serif', sans-serif;
+  padding: 20px
+}
+
+.cd-item-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+li {
+  margin-bottom: 3px;
+}
+
+#steps {
+  background: #fff;
+  border-left: solid 1px #ededed;
+  border-right: solid 1px #ededed;
+  border-bottom: solid 1px #ededed;
+  padding: 20px;
+}
+
+#steps li {
+  list-style-position: inside;
+  margin-bottom: 10px;
+  margin-left: -38px;
+  list-style-type: none;
+}
+
+
+
+.fill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
+}
+.fill img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%
+}
+
+ /*Recipe Category Format*/
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+ *{
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+ }
+ img{width: 100%}
+ 
+ body{
+     font-family: 'Poppins', sans-serif;
+     line-height: 1.5;
+ }
+ 
+ .main-container{
+     width: 90vw;
+     margin: 0 auto;
+     padding: 40px 0;
+ }
+ .main-container > h2{
+     text-align: center;
+     padding: 10px 0;
+     font-size: 32px;
+ }
+ .main-container > p{
+     font-weight: 300;
+     padding: 10px 0;
+     opacity: 0.7;
+     text-align: center;
+ }
+ .category-buttons{
+     margin: 30px 0;
+ }
+ .category-buttons ul{
+     list-style-type: none;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: flex-start;
+ }
+ .category-title{
+     flex: 0 0 calc(16.6667% - 10px);
+     display: flex;
+     justify-content:center;
+     background: #a8a8a8;
+     padding: 12px;
+     color: #fff;
+     margin: 5px;
+     cursor: pointer;
+     transition: all 0.4s ease;
+ }
+ .category-title:hover{
+     opacity: 0.7;
+ }
+ .category-title li{
+     padding: 0 10px;
+ }
+ .category-title span{
+     color: #222;
+ }
+ 
+ /**Recipe Card **/
+ .recipes{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap: 40px;
+ }
+ .recipes > div{
+     box-shadow: 0px 8px 22px -12px rgba(0, 0, 0, 0.64);
+ }
+ .recipe-img{
+     position: relative;
+ }
+ .category-name{
+     position: absolute;
+     top: 20px;
+     left: 20px;
+     text-transform: uppercase;
+     font-size: 13px;
+     color: #fff;
+     padding: 4px 10px;
+     border-radius: 2px;
+ }
+ .recipe-content{
+     padding: 25px;
+ }
+ .recipe-content-top{
+     background: #80ced7;
+     color: #fff;
+     opacity: 0.8;
+     padding: 5px 0 5px 15px;
+ }
+ .recipe-content-top span{
+     padding-right: 20px;
+ }
+ .recipe-content-top, .recipe-content-top{
+     padding-right: 5px;
+ }
+ .recipe-content h2{
+     font-size: 22px;
+     padding: 12px 0;
+     font-weight: 412;
+ }
+ .recipe-content p{
+     opacity: 0.7;
+     font-size: 15px;
+     line-height: 1.8;
+ }
+
+ 
+ 
+ 
+ /*******Media queries for grid********/
+ @media(max-width: 1170px){
+     .recipes{
+         grid-template-columns: repeat(2, 1fr);
+     }
+ }
+ @media(max-width: 768px){
+     .recipes{
+         grid-template-columns: 1fr;
+     }
+ }
+ 
+ 
+ /*****Button Styles and Category Tags******/
+ 
+ .blended .category-name{
+     background: #00a7ea;
+     color:black;
+ }
+ .hot .category-name{
+     background: #ad0000;
+     color:black;
+   
+ }
+ .mine .category-name{
+  background: #000000;
+}
+ .iced .category-name{
+     background: #61eef3;
+     color:black;
+ }
+
+ .btn-block{
+  background:#442305;
+  color:white;
+  width: 100%;
+ 
+ }
+ 
+ .btn-block:hover{
+  background:var(--primary);
+ }
+.active{
+     background:#774e28;
+ }
+ .recipe-content{
+  margin: bottom 87px;
+ }
+ 
+ 
+ 
+  
+ 
+
+  
+  
+ 

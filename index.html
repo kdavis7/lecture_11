@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newbie's Coffee</title>
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" type="image/x-icon" href="/img/icons/favicon.png">
+   
+</head>
+<!--Navigation for Desktop-->
+<body class="black-text">
+    <nav class="z-depth-2">
+        <div class="nav-wrapper container">
+            <a href="/" class="center" >Newbie's<span> Coffee</a>
+            <span class="left brown-text text-darken-2">
+                <i class="left hide-on-large-only material-icons sidenav-trigger" data-target="side-menu">menu</i>
+            </span>
+                <ul class="right hide-on-med-and-down brown-text text-darken-2">
+                    <li><a href="/">Home</a></li>
+                    <li><a href= "/mypages/favs.html">Favs</a></li>
+                    <li><a href="/mypages/coffeeterms.html">Coffee Terms</a></li>
+                   
+                </ul>
+            
+        </div>
+    </nav>
+<!--Navigation side menu for Mobile Devices-->
+    <ul id="side-menu" class="sidenav side-menu">
+        <li><a class="subheader">NEWBIE'S COFFEE</a></li>
+        <li><a href="/" class="waves-effect">Home</a></li>
+        <li><a href= "/mypages/favs.html" class="waves-effect">Favs</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a href="/mypages/coffeeterms.html" class="waves-effect"><i class="brown-text material-icons">coffee</i>Coffee Terms</a>
+
+        </li>
+    </ul>
+<!--Category Buttons-->
+<div class = "main-container">
+    <div class = "filter-container">
+        <div class = "category-buttons">
+            <ul>
+                <div class = "category-title active" id = "all">
+                    <li>All</li>
+                    <span><i class = "material-icons">coffee</i></span>
+                </div>
+                <div class = "category-title" id = "hot">
+                    <li>Hot</li>
+                    <span><i class = "material-icons">local_fire_department</i></span>
+                </div>
+               
+                <div class = "category-title" id = "iced">
+                    <li>Iced</li>
+                    <span><i class = "material-icons">ac_unit</i></span>
+                </div>
+                <div class = "category-title" id = "blended">
+                    <li>Blended</li>
+                    <span><i class = "material-icons">blender</i></span>
+                </div>
+                <div class = "category-title" id = "mine">
+                    <li>By Me:</li>
+                    <span><i class = "material-icons">edit</i></span>
+                </div>
+               
+            </ul>
+        </div>
+        
+
+        <div class = "recipe">
+            <div class = "recipes">
+
+                <!-- recipe card -->
+                <div class = "all mine">
+                    <div class = "recipe-img">
+                        <img src = "coffee.jpg" alt = "a cup of coffee.">
+                        <span class = "category-name">Mine</span>
+                    </div>
+
+                    <div class = "recipe-content">
+                        <a href="#" class= "right btn-floating grey"><i class="material-icons">delete_outline</i></a>
+                        
+                        <h2>Americano<a href="#" class="right favorite-btn btn-floating red pulse">
+                            <i class="material-icons">favorite</i></a></h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            orem, ipsum dolor sit amet consectetur adipisicing elit.orem, ipsum dolor sit amet consectetur adipisicing elit.  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+
+                    <div class ="center">
+                        <a href ="/mypages/americano.html" class= "btn btn-block btn-large">Ingredients</a>
+                    </div>
+                        
+                </div>
+                <!-- end of recipe card -->
+                <!-- recipe card -->
+                <div class = "all blended">
+                    <div class = "recipe-img">
+                        <img src = "coffee.jpg" alt = "a cup of coffee">
+                        <span class = "category-name">blended</span>
+                    </div>
+
+                    <div class = "recipe-content">
+                        <a href="#" class="right favorite-btn btn-floating red">
+                            <i class="material-icons">favorite</i></a>
+                        <h2>Blended Caramel Coffee</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt!
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. orem, ipsum dolor sit amet consectetur adipisicing elit.orem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        </p>
+                    </div>
+                    <div class ="center">
+                        <a href ="/mypages/blendedCaramelCoffee.html" class= "btn btn-block btn-large">Ingredients</a>
+                    </div>
+                </div>
+                <!-- end of recipe card -->
+                <!-- recipe card -->
+                <div class = "all blended">
+                    <div class = "recipe-img">
+                        <img src = "coffee.jpg" alt = "a hot cup of coffee">
+                        <span class = "category-name">blended</span>
+                    </div>
+
+                    <div class = "recipe-content">
+                        <a href="#" class="right favorite-btn btn-floating red">
+                            <i class="material-icons">favorite</i></a>
+                        <h2>Blended Cafe Vanilla</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt! Lorem, ipsum dolor sit amet consectetur adipisicing elit. orem, ipsum dolor sit amet consectetur adipisicing elit.orem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        </p>
+                    </div>
+                    <div class ="center">
+                        <a href ="/mypages/blendedCafeVanilla.html" class= "btn btn-block btn-large">Ingredients</a>
+                    </div>
+                </div>
+                <!-- end of recipe card -->
+                <!-- recipe card -->
+                <div class = "all hot">
+                    <div class = "recipe-img">
+                        <img src = "coffee.jpg" alt = "a cup of coffee.">
+                        <span class = "category-name">hot</span>
+                    </div>
+
+                    <div class = "recipe-content">
+                        <a href="#" class="right favorite-btn btn-floating red">
+                            <i class="material-icons">favorite</i></a>
+                        <h2>Cafe Misto</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt! Lorem, ipsum dolor sit amet consectetur adipisicing elit. orem, ipsum dolor sit amet consectetur adipisicing elit.orem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        </p>
+                    </div>
+                    <div class ="center">
+                        <a href ="/mypages/cafeMisto.html" class= "btn btn-block btn-large">Ingredients</a>
+                    </div>
+                </div>
+                <!-- end of recipe card -->
+                <!-- recipe card -->
+                <div class = "all hot">
+                    <div class = "recipe-img">
+                        <img src = "coffee.jpg" alt = "a hot cup of coffee">
+                        <span class = "category-name">hot</span>
+                    </div>
+
+                    <div class = "recipe-content">
+                        <a href="#" class="right favorite-btn btn-floating red">
+                            <i class="material-icons">favorite</i></a>
+                        <h2>Cappuccino</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt! Lorem, ipsum dolor sit amet consectetur adipisicing elit. orem, ipsum dolor sit amet consectetur adipisicing elit.orem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        </p>
+                    </div>
+                    <div class ="center">
+                        <a href ="/mypages/cappuccino.html" class= "btn btn-block btn-large">Ingredients</a>
+                    </div>
+                </div>
+                <!-- end of recipe card -->
+                 <!-- recipe card -->
+                 <div class = "all hot">
+                    <div class = "recipe-img">
+                        <img src = "coffee.jpg" alt = "a hot cup of coffee">
+                        <span class = "category-name">hot</span>
+                    </div>
+
+                    <div class = "recipe-content">
+                        <a href="#" class="right favorite-btn btn-floating red">
+                            <i class="material-icons">favorite</i></a>
+                        <h2>Hot Coffee</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt! Lorem, ipsum dolor sit amet consectetur adipisicing elit. orem, ipsum dolor sit amet consectetur adipisicing elit.orem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        </p>
+                    </div>
+                    <div class ="center">
+                        <a href ="/mypages/hotCoffee.html" class= "btn btn-block btn-large">Ingredients</a>
+                    </div>
+                    </div>
+                <!-- end of recipe card -->
+                 <!-- recipe card -->
+                 <div class = "all hot">
+                    <div class = "recipe-img">
+                        <img src = "coffee.jpg" alt = "a hot cup of coffee.">
+                        <span class = "category-name">Hot</span>
+                    </div>
+
+                    <div class = "recipe-content">
+                        <a href="#" class="right favorite-btn btn-floating red">
+                            <i class="material-icons">favorite</i></a>
+                        <h2>Vietnamese Coffee</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt! Lorem, ipsum dolor sit amet consectetur adipisicing elit. orem, ipsum dolor sit amet consectetur adipisicing elit.orem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        </p>
+                    </div>
+                    <div class ="center">
+                        <a href ="/mypages/vietnamese.html" class= "btn btn-block btn-large">Ingredients</a>
+                    </div>
+                </div>
+                <!-- end of recipe card -->
+                 <!-- recipe card -->
+                 <div class = "all iced">
+                    <div class = "recipe-img">
+                        <img src = "coffee.jpg" alt="a all hot cup of coffee">
+                        <span class = "category-name">iced</span>
+                    </div>
+
+                    <div class = "recipe-content">
+                        <a href="#" class="right favorite-btn btn-floating red">
+                            <i class="material-icons">favorite</i></a>
+                        <h2>Iced Coffee</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt! Lorem, ipsum dolor sit amet consectetur adipisicing elit. orem, ipsum dolor sit amet consectetur adipisicing elit.orem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        </p>
+                    </div>
+                    <div class ="center">
+                        <a href ="/mypages/icedCoffee.html" class= "btn btn-block btn-large">Ingredients</a>
+                    </div>
+                </div>
+                <!-- end of recipe card -->
+                 <!-- recipe card -->
+                 <div class = "all blended">
+                    <div class = "recipe-img">
+                        <img src = "coffee.jpg" alt = "a hot cup of coffee.">
+                        <span class = "category-name">blended</span>
+                    </div>
+
+                    <div class = "recipe-content">
+                        <a href="#" class="right favorite-btn btn-floating red">
+                            <i class="material-icons">favorite</i></a>
+                        <h2>Blended Mocha</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt! Lorem, ipsum dolor sit amet consectetur adipisicing elit. orem, ipsum dolor sit amet consectetur adipisicing elit.orem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        </p>
+                    </div>
+                    <div class ="center">
+                        <a href ="/mypages/blendedMocha.html" class= "btn btn-block btn-large">Ingredients</a>
+                    </div>
+                </div>
+                <!-- end of recipe card -->
+                 
+        <!-- recipe card -->
+                <div class = "all iced">
+                    <div class = "recipe-img">
+                        <img src = "coffee.jpg" alt="a hot cup of coffee">
+                        <span class = "category-name">iced</span>
+                    </div>
+
+                    <div class = "recipe-content">
+                        <a href="#" class="right favorite-btn btn-floating red">
+                            <i class="material-icons">favorite</i></a>
+                        <h2>Dalgona Coffee</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Accusamus recusandae aspernatur possimus illum, repellat ad quasi earum, illo voluptatibus minima fugiat saepe magni corporis vero eius accusantium quidem, consectetur nesciunt! Lorem, ipsum dolor sit amet consectetur adipisicing elit. orem, ipsum dolor sit amet consectetur adipisicing elit.orem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        </p>
+                    </div>
+                    <div class ="center">
+                        <a href ="/mypages/dalgona.html" class= "btn btn-block btn-large">Ingredients</a>
+                    </div>
+                </div>
+                <!-- end of recipe card -->
+               
+            </div>
+        </div>
+    </div>
+</div>
+    
+<div class="center">
+    <a class="btn-floating btn-large add-btn sidenav-trigger" data-target="side-form">
+        <i class="material-icons">add</i>
+    </a>
+</div>
+<!---Start of Add Recipe Form -->
+<div id="side-form" class="sidenav side-form">
+    <form class="add-recipe container section">
+        <h6>New Recipe</h6>
+        <div class="divider"></div>
+        <div class="white input-field">
+            <input placeholder="Enter Recipe Name" id="title" class="validate" type="text">
+            <label for="title">Recipe Name</label>
+        </div>
+        <div class="input-field">
+            <input placeholder="Enter Recipe Description" id="description" class="validate" type="text">
+            <label for="description">Description</label>
+        </div>
+        <div class="input-field">
+            <input placeholder="Enter Recipe Ingredients" id="description" class="validate" type="text">
+            <label for="description">Ingredients</label>
+        </div>
+        <div class="input-field">
+        <input placeholder="Upload Image" type="file" id="image" name="image">
+        </div>
+        <div class="input-field center">
+            <button class="btn-small">Add New Recipe</button>
+        </div>
+    </form>
+</div>
+
+    <script src="/js/ui.js"></script>
+    <script src="/js/app.js"></script>
+    <script type="module" src="/js/db.js"></script>
+</body>
+
+</html>
